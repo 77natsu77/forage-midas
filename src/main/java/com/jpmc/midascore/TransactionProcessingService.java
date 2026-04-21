@@ -38,8 +38,8 @@ public void processTransaction(Transaction txn) {
         record.setSender(sender);
         record.setRecipient(recipient);
         record.setAmount(txn.getAmount());
-        System.out.println("DATA: " + sender);
-        System.out.println("DATA: " + recipient);        
+        //System.out.println("DATA: " + sender);
+        //System.out.println("DATA: " + recipient);        
         //  Save changes
         userRepository.save(sender);
         userRepository.save(recipient);
